@@ -1,0 +1,21 @@
+# Cloudflare Workers Local Environment Bindings (.dev.vars)
+# Copy this file to .dev.vars for local wrangler dev runs.
+# NEVER commit .dev.vars to version control.
+
+# Required: Google Gemini API Key
+GEMINI_API_KEY="your-gemini-api-key-here"
+
+# Supabase Server/Worker Configuration
+# CRITICAL SECURITY REQUIREMENT:
+# SUPABASE_SERVICE_ROLE_KEY MUST ONLY RESIDE IN THE WORKER (never exposed to client bundle)
+SUPABASE_URL="https://your-project-id.supabase.co"
+SUPABASE_SERVICE_ROLE_KEY="your-supabase-service-role-secret-key"
+
+# Client keys can also be bridged for Worker verification
+VITE_SUPABASE_URL="https://your-project-id.supabase.co"
+VITE_SUPABASE_ANON_KEY="your-anon-public-key"
+
+# Cloudflare AI Gateway Settings (Optional)
+# CLOUDFLARE_ACCOUNT_ID="your-cloudflare-account-id"
+# CLOUDFLARE_GATEWAY_ID="your-cloudflare-gateway-id"
+# CF_AIG_TOKEN="your-cloudflare-ai-gateway-token"

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix HealthCare AI Assistant",
+  "description": "An AI-powered healthcare assistant chatbot providing symptom checking, medical advice, and wellness tips.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
